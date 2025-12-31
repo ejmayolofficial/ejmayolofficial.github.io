@@ -32,11 +32,11 @@ section {
 }
 
 .eyebrow {
-  color: var(--wine);
+  color: var(--text);
   letter-spacing: 0.12em;
   font-size: 0.75rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -57,7 +57,7 @@ h3 {
 .sub {
   font-size: 1.15rem;
   max-width: 600px;
-  color: var(--muted);
+  color: var(--text);
 }
 
 ul, ol {
