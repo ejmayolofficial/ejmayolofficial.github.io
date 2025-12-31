@@ -25,10 +25,25 @@ section {
 }
 
 .hero {
-  min-height: 100vh;
+  position: relative;
+  min-height: 140vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+
+  /* Scroll reveal background */
+  background-image: url("assets/pexels-chetanvlad-2892619.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  /* Start dark */
+  box-shadow: inset 0 0 0 2000px rgba(11, 11, 12, 0.6);
+}
+
+.hero-overlay {
+  padding: 5rem 10%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .eyebrow {
