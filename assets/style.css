@@ -1,0 +1,170 @@
+:root {
+  --bg: #0b0b0c;
+  --panel: #141416;
+  --wine: #5a0f1c;
+  --text: #f2f2f2;
+  --muted: #a0a0a0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+section {
+  padding: 5rem 10%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  position: relative;
+  min-height: 140vh;
+  display: flex;
+  align-items: center;
+
+  /* Scroll reveal background */
+  background-image: url("assets/pexels-chetanvlad-2892619.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  /* Start dark */
+  box-shadow: inset 0 0 0 2000px rgba(11, 11, 12, 0.6);
+}
+
+.hero-overlay {
+  padding: 5rem 10%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.eyebrow {
+  color: var(--wine);
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+.sub {
+  font-size: 1.15rem;
+  max-width: 600px;
+  color: var(--muted);
+}
+
+ul, ol {
+  max-width: 700px;
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.6rem;
+}
+
+.panel {
+  background: linear-gradient(
+    160deg,
+    var(--panel),
+    rgba(90, 15, 28, 0.15)
+  );
+  border-radius: 18px;
+}
+
+.highlight {
+  margin-top: 2rem;
+  font-weight: 600;
+  border-left: 3px solid var(--wine);
+  padding-left: 1rem;
+}
+
+.muted-text {
+  color: var(--muted);
+  max-width: 600px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 3rem;
+}
+
+/* WORKS */
+
+.works-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.work-card {
+  background: #000;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-6px);
+}
+
+.work-card img,
+.work-card iframe {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.work-card span {
+  display: block;
+  padding: 0.8rem 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: #0e0e0f;
+}
+
+/* CTA */
+
+.cta {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem 2.2rem;
+  border-radius: 999px;
+  background: var(--wine);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
