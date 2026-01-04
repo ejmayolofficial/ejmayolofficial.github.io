@@ -109,11 +109,12 @@ li {
   background: #000;
   border-radius: 14px;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .work-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(90, 15, 28, 0.25);
 }
 
 .work-card img,
@@ -152,4 +153,44 @@ li {
 .price {
   font-size: 1.3rem;
   margin: 1rem 0;
+}
+
+.scroll-cue {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.scroll-cue .line {
+  margin: 0.8rem auto 0;
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    var(--wine),
+    transparent
+  );
+  animation: scrollPulse 2s infinite;
+}
+
+@keyframes scrollPulse {
+  0% { opacity: 0; height: 10px; }
+  50% { opacity: 1; height: 40px; }
+  100% { opacity: 0; height: 10px; }
+}
+
+section p,
+section ul,
+section ol {
+  margin-bottom: 1.5rem;
+}
+
+section h2 {
+  max-width: 720px;
 }
